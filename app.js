@@ -2,13 +2,13 @@
 let nomes = [];
 
 function adicionarAmigo() {
-    let nome = document.getElementById('nome').value;
+    let nome = document.getElementById('amigo').value;
     if(nome==""){
         alert("Nome não pode estar em branco");
     }
     else{
         nomes.push(nome);
-        document.getElementById('nome').value = "";
+        document.getElementById('amigo').value = "";
         console.log(nomes);
     }
     
