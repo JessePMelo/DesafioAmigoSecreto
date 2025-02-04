@@ -28,10 +28,8 @@ function adicionarAmigo() {
 
 
 function sortearAmigo() {
-    let numeroEscolhido = parseInt(Math.random() * nomes.length + 1);
-    document.getElementById('paragrafo').innerHTML = `<p>O Amigo secreto sorteado é ${nomes[numeroEscolhido-1]}</p>`;
+    if (nomesArray.length > 1){
+        let numeroEscolhido = parseInt(Math.random() * nomesArray.length + 1);
+        document.getElementById('paragrafo').innerHTML = `<p>O Amigo secreto sorteado é ${nomes[numeroEscolhido]}</p>`;    
+    }  
 }
-
-
-document.getElementById('listaAmigos').innerHTML += `<li>${nome}</li>`;
-document.getElementById('amigo').value = "";
